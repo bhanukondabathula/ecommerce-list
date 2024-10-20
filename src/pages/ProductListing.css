@@ -1,0 +1,177 @@
+/* src/pages/ProductListing.css (For Large Screens) */
+.product-listing {
+  padding-left: 80px;
+  background-color: white;
+  border: 1px solid white;
+  background-size: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+  font-family: "Roboto";
+}
+
+.nurserytext {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 40px;
+}
+
+.nursery-plants {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+.nursery-plantdetails {
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 150px;
+  text-align: center;
+  margin-right: 15px;
+}
+.product-page {
+  display: flex;
+  padding: 20px;
+}
+
+.filter-box {
+  background-color: #F0FFE5;
+  background-size: cover;
+  height: 800px;
+  width: 300px; 
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+}
+.filters{
+  display: flex;
+  justify-content: space-between;
+}
+.filters p{
+  font-size: 14px;
+  color: gray;
+}
+
+.hrline {
+  border: 1px solid gray;
+}
+
+.plant {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.plant-details {
+  color: gray;
+  font-size: 14px;
+  margin-top: 10px;
+  white-space: normal;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Columns will adjust automatically */
+  gap: 20px;
+  flex-grow: 1; /* Allow the product grid to take remaining space */
+}
+.viewmore{
+  padding: 10px;
+  text-align: center;
+  margin-top: 35px;
+}
+.view-button{
+  width: 130px;
+  height: 35px;
+  padding: 10px;
+  background-color: rgb(8, 52, 8);
+  border-radius: 15px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  
+  .filter-box {
+    margin-bottom: 20px; 
+  }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .product-listing {
+      padding-left: 20px;
+      margin-left: 5px;
+  }
+
+  .nurserytext {
+      font-size: 18px;
+      margin-left: 20px;
+  }
+
+  .nursery-plants {
+      margin-left: 20px;
+  }
+
+  .nursery-plantdetails {
+      max-width: 120px;
+      margin-right: 10px;
+  }
+
+  .plant {
+      width: 80px;
+      height: 80px;
+  }
+
+  .products {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+  }
+
+  .plant-details {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-listing {
+      padding-left: 10px;
+      margin-left: 0;
+  }
+
+  .nurserytext {
+      font-size: 16px;
+      margin-left: 10px;
+  }
+
+  .nursery-plants {
+      margin-left: 10px;
+  }
+
+  .nursery-plantdetails {
+      max-width: 100px;
+      margin-right: 5px;
+  }
+
+  .plant {
+      width: 60px;
+      height: 60px;
+  }
+
+  .products {
+      grid-template-columns: 1fr;
+  }
+
+  .plant-details {
+      font-size: 10px;
+  }
+  .filter-box{
+    display: none;
+  }
+}

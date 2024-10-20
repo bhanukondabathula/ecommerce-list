@@ -1,0 +1,95 @@
+/* src/components/ProductCard.css */
+.product-card {
+    background-color: transparent;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    max-width: 350px;
+  }
+  .plant-view{
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+  }
+  .viewbutton{
+    height: 30px;
+    text-align: center;
+    background-color:  #165315;
+    color: white;
+    font-weight: 600;
+    border: none;
+  }
+  .wishlist{
+    text-align: right;
+    font-size: 50px;
+    margin-right: 10px;
+
+  }
+  .star {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 3px;
+    color: #ff9800;
+    background-color: #ff9800;
+  }
+  .actualprice{
+    text-decoration: line-through;
+  }
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 16px;
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: gray;
+  }
+  .product-text{
+    text-align: left;
+  }
+  .price{
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+  }
+ .add-to-cart{
+  width: 120px;
+  height: 35px;
+  background-color: #165315;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 15px;
+ }
+ .buy-on-rent{
+  width: 90px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  font-size: 12px;
+  text-align: center;
+ }
+.buttons{
+  display: flex;
+
+}
+  

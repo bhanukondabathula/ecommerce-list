@@ -1,0 +1,40 @@
+/* src/components/AddToCartModal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-content h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  
+  .modal-content button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #48ea4a;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .modal-content button:hover {
+    background-color: #e68900;
+  }
+  
